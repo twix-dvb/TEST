@@ -1,0 +1,12 @@
+def calculate_strain(orig_len: float, ch_len: float) -> float:
+  """ Calculate the strain.
+
+  Inputs:
+  orig_len (float): The original length of the material in meters.
+  ch_len (float): The change in length in meters.
+
+  Returns:
+  strain (float): The strain.
+  """
+  strain = ch_len / orig_len
+  return strain

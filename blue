@@ -1,0 +1,13 @@
+def add_to_history(calculation_method: dict, history: list) -> None:
+  """ Add a calculation method to the history. """
+  history.append(calculation_method)
+  print("Calculation added to history.")
+
+def get_material_database() -> dict:
+  """ Return a dictionary of material properties. """
+  materials = {
+      "Steel": {"yield_strength": 250, "youngs_modulus": 200},
+      "Aluminum": {"yield_strength": 95, "youngs_modulus": 69},
+      "Titanium": {"yield_strength": 880, "youngs_modulus": 114}
+  }
+  return materials
