@@ -1,0 +1,14 @@
+ # TODO: Display statistics (optional)
+    # - Highest stress
+    # - Lowest safety factor
+    # - Average strain
+    # - Material test counts
+    if len(test_history) > 0:
+        #highest stress
+        highest_stress = max(item["stress"] for item in test_history)
+
+        #lowest safety factor
+        lowest_sf = min(item["safety_factor_raw"] for item in test_history)
+
+        #ave strain
+        avg_strain
